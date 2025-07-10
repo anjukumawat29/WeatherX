@@ -1,0 +1,65 @@
+.InfoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.glassCard {
+    background: rgba(235, 234, 234, 0.651);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.topDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+.topDetails h2,
+.topDetails h1,
+.topDetails p {
+    margin: 0.2rem;
+}
+
+.extraDetails {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.weatherIcon svg {
+    font-size: 4.5rem;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+}
+
+.statBox {
+    background: rgba(255,255,255,0.6);
+    color: #333;
+    border-radius: 10px;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.statBox:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

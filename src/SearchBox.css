@@ -1,0 +1,36 @@
+.SearchBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+}
+
+.SearchBox form {
+    width: 90%;
+    max-width: 500px; /* adjust as needed */
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; /* thoda gap between input & icon */
+}
+
+
+.customInput .MuiOutlinedInput-root {
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(56, 56, 56, 0.1);
+    transition: 0.3s;
+}
+
+.customInput .MuiOutlinedInput-root:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.customInput .MuiOutlinedInput-root.Mui-focused {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.customInput input {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+}
